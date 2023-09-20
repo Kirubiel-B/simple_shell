@@ -6,7 +6,6 @@
  *
  * Return: void
  */
-char **kj = NULL;
 
 void kan(char **kha)
 {
@@ -54,6 +53,7 @@ void kan(char **kha)
 
 void kam(char **kha __attribute__((unused)))
 {
+	char **kj = NULL;
 	int k;
 
 	for (k = 0; kj[k] != NULL; k++)
