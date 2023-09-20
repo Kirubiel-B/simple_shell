@@ -1,11 +1,11 @@
-#include "simple_shell.h"
-
+#include "simple_shell"
 /**
- * kah - determines the type of the command
- * @command: command to be parsed
- *
- * Return: constant representing the type of the command
- *
+ * kah - Adjudicates the syntactical category of the input command.
+ * @command: The command string subjected to parsing and classification.
+ * This function conducts a comprehensive analysis of the provided command
+ * categorizing it into a specific syntactical class.
+ * It subsequently returns a constant signifying the discerned class.
+ * Return: constant denoting ascertained syntactical classification of command.
  */
 
 int kah(char *command)
@@ -36,12 +36,17 @@ int kah(char *command)
 }
 
 /**
- * kai - executes a command based on it's type
- * @tokenized_command: tokenized form of the command (ls -l == {ls, -l, NULL})
- * @command_type: type of the command
- *
- * Return: void
+ * kai - Orchestrates execution of command contingent determined type.
+ * @tokenized_command: command represented in tokenized form
+ * @command_type: The categorization denoting the type of the command.
+ * This function serves as the central controller
+ * coordinating execution of a command based syntactical classification.
+ * takes tokenized representation of command and command's type as inputs,
+ * proceeds to execute the command according to its designated category.
+ * Return: No explicit return;
+ * this function operates to execute the command.
  */
+
 void kai(char **tokenized_command, int command_type)
 {
 	void (*kg)(char **kh);
@@ -78,10 +83,16 @@ void kai(char **tokenized_command, int command_type)
 }
 
 /**
- * kaj - checks if a command is found in the PATH
- * @command: command to be used
- *
- * Return: path where the command is found in, NULL if not found
+ * kaj - Determines the presence and location of a specified command
+ * within the system's PATH environment.
+ * @command: The command for which presence within the PATH is being verified.
+ * This function is responsible for conducting a comprehensive search
+ * within the system's PATH environment to ascertain the existence
+ * and location of the specified command. Upon completion
+ * it returns the absolute path where the command is found
+ * or NULL if it is not present within the PATH.
+ * Return: A string containing the absolute path of the located command,
+ * or NULL if not found.
  */
 char *kaj(char *command)
 {
@@ -113,12 +124,14 @@ char *kaj(char *command)
 	free(path_array);
 	return (NULL);
 }
-
 /**
- * kak - retrieves a function based on the command given and a mapping
- * @command: string to check against the mapping
- *
- * Return: pointer to the proper function, or null on fail
+ * kak - Looks up and returns funct pointer based on given command.
+ * @command: The command string to match in a predefined mapping.
+ * This function searches for the corresponding function
+ * in a predefined mapping based on the provided command.
+ * If a match is found, it returns a pointer to that function;
+ * otherwise, it returns NULL.
+ * Return: A pointer to the matched function.
  */
 void (*kak(char *command))(char **)
 {
@@ -136,10 +149,13 @@ void (*kak(char *command))(char **)
 }
 
 /**
- * kal - gets the value of an environment variable
- * @name: name of the environment variable
- *
- * Return: the value of the variable as a string
+ * kal - Retrieves the value of an environment variable.
+ * @name: The name of the environment variable to retrieve.
+ * This function retrieves the value of
+ * the specified environment variable and returns it as a string.
+ * If the variable does not exist or an error occurs,
+ * this function returns NULL.
+ * Return: The value of the variable as a string (or N on failure).
  */
 char *kal(char *name)
 {

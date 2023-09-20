@@ -1,9 +1,18 @@
 #include "simple_shell.h"
 
 /**
- * kao - handles non_interactive mode
+ * kao - This function handles non-interactive mode
+ * by performing the following tasks:
+ *   - [Task 1]: [Describe the first task, if applicable]
+ *   - [Task 2]: [Describe the second task, if applicable]
+ *   - [Task 3]: [Describe the third task, if applicable]
+ *   - [Task N]: [Describe any additional tasks, if applicable]
  *
- * Return: void
+ * In non-interactive mode
+ * explain non-interactive mode means or how it affects function's behavior.
+ *
+ * Return:
+ *   This function does not return a value (void).
  */
 
 void kao(void)

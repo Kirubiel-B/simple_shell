@@ -7,14 +7,19 @@
 	int ko = 0;
 
 /**
- * main - the main shell code
- * @argc: number of arguments passed
- * @argv: program arguments to be parsed
+ * main - The main function for the shell program.
  *
- * applies the functions in utils and helpers
- * implements EOF
- * Prints error on Failure
- * Return: 0 on success
+ * @argc: The number of arguments passed to the program.
+ * @argv: An array of program arguments to be parsed.
+ * This function serves as the entry point to the shell
+ * program and performs the following tasks:
+ * Applies various functions from the "utils" and "helpers"
+ * modules to handle shell operations.
+ * Implements the End-of-File (EOF) mechanism for program termination.
+ * Prints error messages in case of failures or errors during execution.
+ *
+ * Return: Returns 0 on successful execution
+ * indicating successful program termination.
  */
 
 

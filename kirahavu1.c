@@ -1,12 +1,16 @@
 #include "simple_shell.h"
 
 /**
- * kap - starts executing everything
- * @kaq: try to check current token
- * @kar: parse token
+ * kap - function initiates the execution of the entire program.
  *
- * Return: void function
+ * Parameters:
+ *	@kaq: A variable used to check the current token.
+ * @kar: A variable responsible for token parsing.
+ *
+ * Return:
+ *   This function has no return value (void).
  */
+
 
 void kap(char **kaq, int kar)
 {
