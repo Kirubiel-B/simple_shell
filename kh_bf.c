@@ -7,6 +7,8 @@
  *Return: void
  */
 
+char **kj = NULL;
+
 void kam(char **kha __attribute__((unused)))
 {
         int k;
