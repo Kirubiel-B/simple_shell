@@ -1,6 +1,24 @@
 #include "simple_shell.h"
 
 /**
+ *kam - function env
+ *@kha: command
+ *
+ *Return: void
+ */
+
+void kam(char **kha __attribute__((unused)))
+{
+        int k;
+
+        for (k = 0; kj[k] != NULL; k++)
+        {
+                kp(kj[k], STDOUT_FILENO);
+                kp("\n", STDOUT_FILENO);
+        }
+}
+
+/**
  * kan - function quit
  * @kha: command
  *
@@ -42,24 +60,3 @@ void kan(char **kha)
 	else
 		kp("$: exit doesn't take more than one argument\n", STDERR_FILENO);
 }
-
-
-/**
- *kam - function env
- *@kha: command
- *
- *Return: void
- */
-
-void kam(char **kha __attribute__((unused)))
-{
-	char **kj = NULL;
-	int k;
-
-	for (k = 0; kj[k] != NULL; k++)
-	{
-		kp(kj[k], STDOUT_FILENO);
-		kp("\n", STDOUT_FILENO);
-	}
-}
-
