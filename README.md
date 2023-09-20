@@ -1,5 +1,5 @@
 ALX group project
-
+project parteners :-  haven hailemariam and kirubel beza
 0x16. C - Simple Shell
 
 List of allowed functions and system calls
