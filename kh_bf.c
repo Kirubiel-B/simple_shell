@@ -6,6 +6,7 @@
  *
  * Return: void
  */
+char **kj = NULL;
 
 void kan(char **kha)
 {

@@ -91,16 +91,16 @@ char *kaj(char *command)
 	char **path_array = NULL;
 	char *temp, *temp2, *path_cpy;
 	char *path = kal("PATH");
-	int hkj;
+	int i;
 
 	if (path == NULL || ks(path) == 0)
 		return (NULL);
 	path_cpy = malloc(sizeof(*path_cpy) * (ks(path) + 1));
 	kt(path, path_cpy);
 	path_array = kq(path_cpy, ":");
-	for (hkj = 0; path_array[hkj] != NULL; hkj++)
+	for (i = 0; path_array[i] != NULL; i++)
 	{
-		temp2 = kv(path_array[hkj], "/");
+		temp2 = kv(path_array[i], "/");
 		temp = kv(temp2, command);
 		if (access(temp, F_OK) == 0)
 		{
@@ -132,7 +132,7 @@ void (*kak(char *command))(char **)
 
 	for (hkj = 0; hkj < 2; hkj++)
 	{
-		if (ku(command, mapping[hkj].command_name) == 0)
+		if (ku(command, mapping[hkj].kf) == 0)
 			return (mapping[hkj].kg);
 	}
 	return (NULL);
