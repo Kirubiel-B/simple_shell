@@ -24,10 +24,10 @@ extern char **environ;
 #define min(x, y) (((x) < (y)) ? (x) : (y))
 
 /**
- *struct map - a struct that maps a command name to a function 
+ *struct ke - a struct that maps a command name to a function 
  *
- *@command_name: name of the command
- *@func: the function that executes the command
+ *@kf: name of the command
+ *@kg: the function that executes the command
  */
 
 typedef struct ke               
@@ -42,28 +42,28 @@ extern char **km;
 extern char *kn;  
 extern int ko;     
 
-/*helpers*/
+/*kh_h*/
 void kp(char *, int);     
 char **kq(char *, char *);  
 void kr(char *);            
 int ks(char *);             
 void kt(char *, char *);    
 
-/*helpers2*/
+/*kh_h1*/
 int ku(char *, char *);    
 char *kv(char *, char *);
 int kw(char *, char *);     
 int kx(char *, char *);     
 char *ky(char *, char);     
 
-/*helpers3*/
+/*kh_h2*/
 char *kz(char *, char *, char **);                 
 int kaa(char *);                                       
 void *kab(void *kac, unsigned int kad, unsigned int kae);  
 void kaf(int);       
 void kag(char *);    
 
-/*utils*/
+/*kirahavu4*/
 int kah(char *);                
 void kai(char **, int);         
 char *kaj(char *);              

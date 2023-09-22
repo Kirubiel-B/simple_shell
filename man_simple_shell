@@ -1,4 +1,4 @@
-.TH SHELL 1 "August 24, 2021"  "alx-Hoberton-School" "0x16" "C - simple_shell - man page
+.TH SHELL 1 "September, 2023"  "alx-School" "0x16" "C - simple_shell - man page
 .SH NAME
 .B simple_shell \- simple UNIX command interpreter made in C 
 
@@ -39,7 +39,7 @@ $ ls -l
 
 
 .SH BUGS
-not many found.
+still in progress.
 
 .SH AUTHOR
 Kirubiel Beza , Haven Hailemariam
