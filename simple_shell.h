@@ -12,6 +12,9 @@
 #include <dirent.h>
 #include <signal.h>
 
+/**# environ var #*/
+
+extern char **environ;
 
 /*constants*/
 #define KA 1     

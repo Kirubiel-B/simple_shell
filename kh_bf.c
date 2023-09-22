@@ -7,17 +7,15 @@
  *Return: void
  */
 
-char **kj = NULL;
-
 void kam(char **kha __attribute__((unused)))
 {
-        int k;
+	int k;
 
-        for (k = 0; kj[k] != NULL; k++)
-        {
-                kp(kj[k], STDOUT_FILENO);
-                kp("\n", STDOUT_FILENO);
-        }
+	for (k = 0; environ[k] != NULL; k++)
+	{
+		kp(environ[k], STDOUT_FILENO);
+		kp("\n", STDOUT_FILENO);
+	}
 }
 
 /**

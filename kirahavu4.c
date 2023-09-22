@@ -163,7 +163,7 @@ char *kal(char *name)
 	char *pair_ptr;
 	char *name_cpy;
 
-	for (my_environ = kj; *my_environ != NULL; my_environ++)
+	for (my_environ = environ; *my_environ != NULL; my_environ++)
 	{
 		for (pair_ptr = *my_environ, name_cpy = name;
 		     *pair_ptr == *name_cpy; pair_ptr++, name_cpy++)
