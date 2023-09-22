@@ -12,6 +12,8 @@
 #include <dirent.h>
 #include <signal.h>
 
+/*betty*/
+int proud(void);
 
 /*constants*/
 #define KA 1     
