@@ -11,13 +11,9 @@
 #include <errno.h>
 #include <dirent.h>
 #include <signal.h>
-/*getline*/
-char *_getline();
-void hashtag_handle(char *buff);
+
 
 /*constants*/
-#define BUFSIZE 1024
-
 #define KA 1     
 #define KB 2    
 #define KC 3  
